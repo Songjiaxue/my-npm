@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": false, // 是否默认禁用 any
+    "module": "CommonJS",
+    "target": "es5",
+    "jsx": "react", // 在 .tsx文件里支持JSX
+    "allowJs": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true, // 启用实验性的ES装饰器
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src/",
+    "paths": {
+      "@views/*": ["views/*"],
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@images/*": ["assets/images/*"],
+      "@configure/*": ["configure/*"],
+      "@utils/*": ["utils/*"],
+      "@lang/*": ["lang/*"]
+    }
+  }
+}

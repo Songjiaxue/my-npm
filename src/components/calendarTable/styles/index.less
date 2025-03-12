@@ -1,0 +1,89 @@
+@import url('./_var.less');
+.calendar-table_container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.calendar-table_ {
+  &weeks {
+    display: flex;
+    border: 1px solid @gray1;
+    border-bottom: none;
+  }
+  &week {
+    flex: 1;
+    border-right: 1px solid @gray1;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: @gray3;
+    &:last-child {
+      border: none;
+    }
+    &.rest {
+      color: @red;
+    }
+  }
+  &dates {
+    border-left: 1px solid @gray1;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  &date {
+    border-bottom: 1px solid @gray1;
+    border-right: 1px solid @gray1;
+    padding: 12px;
+    &.disabled {
+      color: @gray2;
+    }
+    &.today {
+      color: @yellow;
+    }
+  }
+  &day {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  &today {
+    margin-left: 4px;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    text-align: center;
+    background: @yellow1;
+    font-size: 12px;
+  }
+  &todos {
+    padding: 0;
+    margin: 0;
+    li {
+      margin: 0 0 4px 0;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: @blue;
+      cursor: pointer;
+      &.before {
+        color: @gray3;
+        .calendar-table_todos_icon {
+          background-color: @gray3;
+          & + .line-through {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+    &_icon {
+      margin-right: 4px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: @blue;
+      text-align: center;
+    }
+  }
+}

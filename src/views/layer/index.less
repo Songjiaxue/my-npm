@@ -1,0 +1,43 @@
+body,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+.npm {
+	&-layer {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		height: 100vh;
+		font-size: 14px;
+		box-sizing: border-box;
+		ul,
+		li {
+			list-style: none;
+			font-weight: bold;
+		}
+		ul {
+			display: flex;
+		}
+		li {
+			margin-right: 30px;
+			line-height: 32px;
+		}
+		a:link,
+		a:visited {
+			text-decoration: none;
+			color: #222;
+		}
+		a:hover {
+			padding: 4px 0;
+			&:hover {
+				border-bottom: 3px solid #222;
+			}
+		}
+	}
+	&-main {
+		flex: 1;
+		margin-top: 20px;
+	}
+}
