@@ -20,6 +20,7 @@
 		"每月待做事项"
 	],
 	"repository": "https://github.com/Songjiaxue/my-npm",
+	"homepage": "https://github.com/Songjiaxue/my-npm/tree/feature/calendar-table",
 	"license": "ISC",
 	"devDependencies": {
 		"@types/react": "^19.0.10",
