@@ -1,6 +1,6 @@
 {
 	"name": "calendar-table",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"description": "calendar, 每月计划表， 每月待做事项",
 	"main": "dist/index.bundle.js",
 	"module": "dist/index.bundle.js",
